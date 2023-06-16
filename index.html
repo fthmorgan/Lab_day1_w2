@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Scoreboard</title>
+</head>
+
+<body>
+
+  <header class="container-fluid">
+    <section class="row">
+      <div class="col-12 reset-button">
+        <button onclick="resetButton()">Reset</button>
+      </div>
+    </section>
+  </header>
+
+  <main class="container-fluid">
+
+    <section class="row tile-card text-outline-danger">
+      <div class="col-6 text-center text">
+        <p>Home</p>
+      </div>
+      <div class="col-6 text-center text">
+        <p>Away</p>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="col-6 text-center text">
+        <p><span id="scoreHome">00</span>
+        </p>
+      </div>
+      <div class="col-6 text-center text">
+        <p><span id="scoreAway">00</span></p>
+      </div>
+    </section>
+
+    <section class="row score-buttons">
+      <div class="col-6 score-button1">
+        <button onclick="homePlus1()">Home +1</button>
+        <button onclick="homePlus3()">Home +3</button>
+      </div>
+      <div class="col-6 score-button2">
+        <button onclick="awayPlus1()">Away +1</button>
+        <button onclick="awayPlus3()">Away +3</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container-fluid">
+
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
